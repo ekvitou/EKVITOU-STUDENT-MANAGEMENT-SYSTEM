@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: 'spring-student'
+  datasource:
+    url: jdbc:postgresql://localhost:5432/api_student001
+    username: postgres
+    password: 123
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update   # options: none, validate, update, create, create-drop
+    show-sql: false        # show SQL in console
+    properties:
+      hibernate:
+        format_sql: true  # pretty-print SQL
+        dialect: org.hibernate.dialect.PostgreSQLDialect
